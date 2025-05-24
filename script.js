@@ -101,26 +101,21 @@ function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
 
-    if(userAnswer === correctAnswer){
+    // Tetap hitung skor kalau benar
+    if (userAnswer === correctAnswer) {
         userScore++;
         headerScore();
     }
 
-    questionCount++;
+    // Tidak tampilkan jawaban benar/salah
 
-    if (questionCount < questions.length) {
-        showQuestions(questionCount);
-    } else {
-        quizBox.classList.add('hide');
-        scoreBox.classList.remove('hide');
-        showScore();
-    }
-    
-    //After user has selected, disable all option
-    for(let i = 0; i < allOptions; i++){
+    // Disable semua pilihan agar tidak bisa diklik ulang
+    let allOptions = optionList.children.length;
+    for (let i = 0; i < allOptions; i++) {
         optionList.children[i].classList.add('disabled');
     }
 
+    // Tampilkan tombol Next
     nextBtn.classList.add('active');
 }
 
