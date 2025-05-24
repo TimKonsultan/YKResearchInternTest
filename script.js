@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 // Quiz State
 let questionCount = 0;
 let questionNumb = 1;
@@ -130,8 +132,9 @@ goHomeBtn.onclick = () => {
   resultBox.classList.remove('active');
   document.querySelector('.cover-page').classList.remove('hide');
   quizSection.classList.remove('active');
-
   questionCount = 0;
   questionNumb = 1;
   userScore = 0;
 }
+
+});
