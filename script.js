@@ -100,6 +100,7 @@ function showQuestions(index){
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
+    answer.classList.add('selected');
 
     // Tetap hitung skor kalau benar
     if (userAnswer === correctAnswer) {
