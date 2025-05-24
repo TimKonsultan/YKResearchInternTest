@@ -27,7 +27,6 @@ continueBtn.onclick = () => {
 
     showQuestions(0);
     questionCounter(1);
-    headerScore();
 }
 
 tryAgainBtn.onclick = () => {
@@ -40,8 +39,6 @@ tryAgainBtn.onclick = () => {
     userScore = 0;
     showQuestions(questionCount);
     questionCounter(questionNumb);
-
-    headerScore();
 
 }
 goHomeBtn.onclick = () => {
@@ -105,7 +102,6 @@ function optionSelected(answer) {
     // Tetap hitung skor kalau benar
     if (userAnswer === correctAnswer) {
         userScore++;
-        headerScore();
     }
 
     // Tidak tampilkan jawaban benar/salah
@@ -123,11 +119,6 @@ function optionSelected(answer) {
 function questionCounter(index){
     const questionTotal = document.querySelector('.question-total');
     questionTotal.textContent = `${index} of ${questions.length} Questions`;
-}
-
-function headerScore(){
-    const headerScoreText = document.querySelector('.header-score');
-    headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }
 
 function showResultBox(){
