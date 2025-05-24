@@ -126,7 +126,7 @@ function questionCounter(index){
 
 function headerScore(){
     const headerScoreText = document.querySelector('.header-score');
-    headerScoreText.textContent = `Score: ${userScore} / 5`;
+    headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }
 
 function showResultBox(){
