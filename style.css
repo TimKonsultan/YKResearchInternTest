@@ -16,12 +16,7 @@ body{
     overflow: hidden;
 }
 .main{
-    min-height: 100vh;
-    background: url('/Assets/background2.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    pointer-events: auto;
-    transition: 2s ease;
+  background-color: #09001d;
 }
 .main.active{
     filter: blur(10px);
