@@ -6,7 +6,6 @@ let questionNumb = 1;
 let userScore = 0;
 
 const startBtn = document.querySelector('.start-btn');
-const returnBtn = document.querySelector('.return-btn');
 const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
@@ -23,13 +22,6 @@ startBtn.onclick = () => {
   showQuestions(questionCount);
   questionCounter(questionNumb);
 };
-
-// Return Button
-if (returnBtn) {
-  returnBtn.onclick = () => {
-    window.location.href = '#';
-  };
-}
 
 // Next Question
 nextBtn.onclick = () => {
