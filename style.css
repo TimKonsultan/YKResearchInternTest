@@ -11,14 +11,26 @@ body {
     color: #333;
 }
 
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
 /* Cover Page */
 .cover-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
     background: #f8f9fc;
     color: #333;
+    padding: 20px;
 }
 
 .exam-box {
@@ -26,7 +38,8 @@ body {
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 480px;
+    width: 100%;
+    max-width: 900px;
     text-align: left;
 }
 
